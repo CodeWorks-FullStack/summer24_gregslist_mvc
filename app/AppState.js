@@ -11,6 +11,7 @@ class ObservableAppState extends EventEmitter {
    * @type {Car[]}
    */
   cars = [
+    // NOTE these cars are now overwritten by loadCars method in the CarsService
     new Car({
       make: 'Mazda',
       model: 'Miata',

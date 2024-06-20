@@ -40,7 +40,8 @@ class CarsService {
 
   loadCars() {
     // first argument is where we are pulling data out of, second argument is what we want to turn the data into
-    AppState.cars = loadState('cars', Car) // 💂 cars!!!!!!!!!
+    // NOTE if no data is found at the key provided, loadstate will return null UNLESS you specify you want an array to be returned by wrapping your instance type in []
+    AppState.cars = loadState('cars', [Car]) // 💂 cars!!!!!!!!!
   }
 }
 
